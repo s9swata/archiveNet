@@ -42,7 +42,10 @@ export function NavBar() {
         signIn()
             .then(() => {
                 if (user) {
+<<<<<<< HEAD
                     console.log(user.name, user.email, user.email);
+=======
+>>>>>>> b46af0b83cbdd34bc4ab3006ccda60fda7de0590
                     router.push("/dashboard");
                     console.log("[Page] Sign in completed successfully");
                 }
@@ -72,7 +75,13 @@ export function NavBar() {
                     <NavbarLogo />
                     <NavItems items={navItems} className="font-[semiBold]" />
                     <div className="flex items-center gap-4">
+<<<<<<< HEAD
                         <NavbarButton variant="primary">Get Started Today</NavbarButton>
+=======
+                        <NavbarButton variant="secondary" onClick={doSignIn}>Login</NavbarButton>
+                        <NavbarButton variant="secondary" onClick={doSignOut}>Logout</NavbarButton>
+                        <NavbarButton variant="primary">Book a call</NavbarButton>
+>>>>>>> b46af0b83cbdd34bc4ab3006ccda60fda7de0590
                     </div>
                 </NavBody>
 
